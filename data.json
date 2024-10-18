@@ -1,0 +1,60 @@
+{
+  "id": "CRC-06",
+  "financial_status": "paid",
+  "payment_gateway": "paypal_express",
+  "name": "CRC-06",
+  "note_attributes": null,
+  "phone": "7821125747",
+  "customer": {
+    "first_name": "Patricia",
+    "last_name": "Méndez Santiago",
+    "email": "pattyms81@me.com",
+    "phone": "7821125747"
+  },
+  "shipping_address": {
+    "name": "Patricia Méndez Santiago",
+    "reference": "Casa ventana gris",
+    "first_name": "Patricia",
+    "last_name": "Méndez Santiago",
+    "email": "pattyms81@me.com",
+    "company": "",
+    "phone": "7821125747",
+    "address1": "Calle san francisco 26",
+    "address2": "",
+    "zip": "",
+    "province": "Veracruz",
+    "province_code": "",
+    "city": "Poza rica",
+    "country_code": "MX",
+    "external_number": "26",
+    "internal_number": "",
+    "latitude": null,
+    "longitude": null
+  },
+  "line_items": [
+    {
+      "title": "Item Hey Dude",
+      "sku": "05V910103",
+      "product_id": 11,
+      "price": 500,
+      "grams": 0,
+      "height": 10,
+      "length": 10,
+      "width": 10,
+      "quantity": 1
+    }
+  ],
+  "package_carrier": {
+    "peso_total": 2000,
+    "peso_merchandise": 2.0,
+    "height": 30,
+    "length": 10,
+    "width": 10,
+    "quantity": 1
+  },
+  "carrier": {
+    "carrier_service": "estafeta",
+    "name_carrier": "Estafeta",
+    "price_carrier": "0.0"
+  }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Completo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-gray-50">
+    <div class="w-full max-w-2xl p-8 bg-white shadow-xl rounded-lg">
+      <form id="miFormulario">
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-semibold text-gray-700"
+            >Correo electrónico</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+
+        <div class="mb-6">
+          <label class="inline-flex items-center">
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="newsletter"
+              class="h-4 w-4 text-blue-600 border-gray-300 rounded"
+            />
+            <span class="ml-2 text-sm text-gray-600"
+              >Enviarme novedades y ofertas por correo electrónico</span
+            >
+          </label>
+        </div>
+
+        <div class="mb-6">
+          <label for="region" class="block text-sm font-semibold text-gray-700"
+            >País / Región</label
+          >
+          <select
+            id="region"
+            name="region"
+            class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            required
+          >
+            <option value="" disabled selected>
+              Selecciona tu región o país
+            </option>
+            <option value="1">Región Uno</option>
+            <option value="2">Región Dos</option>
+            <option value="3">Región Tres</option>
+          </select>
+        </div>
+
+        <div class="mb-6 grid grid-cols-2 gap-4">
+          <div>
+            <label
+              for="firstName"
+              class="block text-sm font-semibold text-gray-700"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="lastName"
+              class="block text-sm font-semibold text-gray-700"
+              >Apellido</label
+            >
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label for="colonia" class="block text-sm font-semibold text-gray-700"
+            >Colonia</label
+          >
+          <input
+            type="text"
+            id="colonia"
+            name="colonia"
+            class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Colonia"
+            required
+          />
+        </div>
+
+        <div class="mb-6">
+          <label
+            for="direccion"
+            class="block text-sm font-semibold text-gray-700"
+            >Dirección</label
+          >
+          <input
+            type="text"
+            id="direccion"
+            name="direccion"
+            class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Dirección"
+            required
+          />
+        </div>
+
+        <div class="mb-6 grid grid-cols-2 gap-4">
+          <div>
+            <label
+              for="codigoPostal"
+              class="block text-sm font-semibold text-gray-700"
+              >Código Postal</label
+            >
+            <input
+              type="text"
+              id="codigoPostal"
+              name="codigoPostal"
+              class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Código Postal"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="ciudad"
+              class="block text-sm font-semibold text-gray-700"
+              >Ciudad</label
+            >
+            <input
+              type="text"
+              id="ciudad"
+              name="ciudad"
+              class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Ciudad"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-6 grid grid-cols-2 gap-4">
+          <div>
+            <label for="state" class="block text-sm font-semibold text-gray-700"
+              >Estado</label
+            >
+            <select
+              id="state"
+              name="state"
+              class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              required
+            >
+              <option value="" disabled selected>Selecciona tu estado</option>
+              <option value="1">Estado One</option>
+              <option value="2">Estado Two</option>
+              <option value="3">Estado Three</option>
+            </select>
+          </div>
+          <div>
+            <label for="brand" class="block text-sm font-semibold text-gray-700"
+              >Marca</label
+            >
+            <select
+              id="brand"
+              name="brand"
+              class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+              required
+            >
+              <option value="" disabled selected>Selecciona una marca</option>
+              <option value="1">Marca One</option>
+              <option value="2">Marca Two</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label for="parcel" class="block text-sm font-semibold text-gray-700"
+            >Paquetería</label
+          >
+          <select
+            id="parcel"
+            name="parcel"
+            class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            required
+          >
+            <option value="" disabled selected>Selecciona la paquetería</option>
+            <option value="1">Paquetería One</option>
+            <option value="2">Paquetería Two</option>
+          </select>
+        </div>
+
+        <div class="mb-6">
+          <label for="phone" class="block text-sm font-semibold text-gray-700"
+            >Teléfono</label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Número de teléfono"
+            required
+          />
+        </div>
+
+        <h3 class="text-lg font-bold text-gray-800 mb-4">
+          Detalles del paquete
+        </h3>
+        <div class="mb-6 grid grid-cols-2 gap-4">
+          <input
+            type="number"
+            name="packageWeight"
+            class="border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Peso total (kg)"
+            min="0"
+            required
+          />
+          <input
+            type="number"
+            name="packageHeight"
+            class="border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Altura (cm)"
+            min="0"
+            required
+          />
+          <input
+            type="number"
+            name="packageWidth"
+            class="border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Ancho (cm)"
+            min="0"
+            required
+          />
+          <input
+            type="number"
+            name="packageLength"
+            class="border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Longitud (cm)"
+            min="0"
+            required
+          />
+        </div>
+
+        <div class="mb-6">
+          <label
+            for="packageQuantity"
+            class="block text-sm font-semibold text-gray-700"
+            >Cantidad</label
+          >
+          <input
+            type="number"
+            id="packageQuantity"
+            name="packageQuantity"
+            class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            min="1"
+            placeholder="Cantidad"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <script>
+      function fillForm(data) {
+        document.getElementById("email").value = data.customer.email;
+        document.getElementById("colonia").value =
+          data.shipping_address.reference || "";
+        document.getElementById("direccion").value =
+          data.shipping_address.address1;
+        document.getElementById("ciudad").value = data.shipping_address.city;
+        document.getElementById("codigoPostal").value =
+          data.shipping_address.zip || "";
+        document.getElementById("state").value =
+          data.shipping_address.province || "";
+        document.getElementById("phone").value = data.customer.phone;
+        document.getElementById("packageWeight").value =
+          data.package_carrier.peso_total;
+        document.getElementById("packageHeight").value =
+          data.package_carrier.height;
+        document.getElementById("packageWidth").value =
+          data.package_carrier.width;
+        document.getElementById("packageLength").value =
+          data.package_carrier.length;
+      }
+
+      fetch("data.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Error al cargar el archivo JSON");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          fillForm(data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    </script>
+  </body>
+</html>
